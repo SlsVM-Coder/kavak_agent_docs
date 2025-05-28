@@ -1,0 +1,147 @@
+/* ========= Base ========= */
+body {
+  background: #111111;
+  color: #eeeeee;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #10b981; /* Kavak green */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========= Wrapper ========= */
+.app-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ========= Headers ========= */
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+.page-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #dddddd;
+}
+
+/* ========= Page container ========= */
+.page-container {
+  background: #1e1e1e; /* gris muy oscuro */
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ========= Navigation ========= */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.nav-counter {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* ========= Buttons ========= */
+.nav-button {
+  background: #10b981; /* Kavak green */
+  color: #111111; /* texto oscuro dentro del botón */
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  opacity: 0.9;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+.nav-button:hover:not(:disabled) {
+  background: #059e68; /* un toque más oscuro al hover */
+  opacity: 1;
+}
+.nav-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ========= Listas ========= */
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: #cccccc;
+}
+ul ul {
+  margin-left: 1.5rem;
+}
+
+/* ========= Código ========= */
+code {
+  background: #2d2d2d;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  color: #10b981;
+}
+
+/* ========= Imágenes ========= */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+/* ========= Tablas ========= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+th,
+td {
+  border: 1px solid #222222;
+  padding: 0.5rem;
+}
+th {
+  background: #2d2d2d;
+  color: #ffffff;
+}
+
+/* ======= Mejoras para bloques de código ======= */
+pre {
+  background: #2d2d2d;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow: auto; /* permite scroll si es muy ancho */
+  margin: 1rem 0;
+}
+
+pre code {
+  display: block;
+  white-space: pre-wrap; /* permite que las líneas muy largas se quiebren */
+  word-break: break-word; /* quiebra palabras largas para ajustarse */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Opcional: barra de scroll más sutil */
+pre::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+pre::-webkit-scrollbar-track {
+  background: transparent;
+}
